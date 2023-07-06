@@ -46,6 +46,9 @@ public class GameManager : MonoBehaviour
         if(!added){
             added = true;
             level += 1;
+            if(level >= teethGames.Length){
+                loadLevel("Stage Select");
+            }
             loadLevel(teethGames[level]);
         }
     }

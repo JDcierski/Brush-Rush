@@ -10,6 +10,9 @@ public class goal : MonoBehaviour
     public void achieveGoal(){
         achieved = true;
     }
+    public void failGoal(){
+        achieved = false;
+    }
     public void toggleGoal(){
         achieved = !achieved;
     }
