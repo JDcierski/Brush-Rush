@@ -14,8 +14,8 @@ PlayerSettings:
   accelerometerFrequency: 60
   companyName: DefaultCompany
   productName: Team-18_Game2
-  defaultCursor: {fileID: 2800000, guid: c77f8014d2a3e594f9b544852d84133c, type: 3}
-  cursorHotspot: {x: 0, y: 0}
+  defaultCursor: {fileID: 2800000, guid: 6ac50ef129c888c42896a9aeb97b3239, type: 3}
+  cursorHotspot: {x: 400, y: 300}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
   m_ShowUnitySplashScreen: 1
   m_ShowUnitySplashLogo: 1
