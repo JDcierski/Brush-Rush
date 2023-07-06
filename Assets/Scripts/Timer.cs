@@ -23,7 +23,7 @@ public class Timer : MonoBehaviour
         if(timing){
             time = Time.time - startTime;
             if(time >= length){
-                GameObject.FindWithTag("GameManager").GetComponent<GameManager>().loseHp("Try to go faster!");
+                GameObject.FindWithTag("GameManager").GetComponent<GameManager>().loseHp();
             }
         }
     }

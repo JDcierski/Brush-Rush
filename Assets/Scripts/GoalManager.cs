@@ -51,4 +51,12 @@ public class GoalManager : MonoBehaviour
         }
         return true;
     }
+    public string getDeathMessage(){
+        foreach(goal g in goals){
+            if(g.achieved == false){
+                return g.deathMessage;
+            }
+        }
+        return "There were no goals in the scene. This is a bug";
+    }
 }

@@ -6,6 +6,7 @@ public class goal : MonoBehaviour
 {
     
     public bool achieved;
+    public string deathMessage;
     public void achieveGoal(){
         achieved = true;
     }

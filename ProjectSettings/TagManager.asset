@@ -8,6 +8,8 @@ TagManager:
   - GameManager
   - TestZone
   - Goal
+  - WaterZone
+  - GoalManager
   layers:
   - Default
   - TransparentFX

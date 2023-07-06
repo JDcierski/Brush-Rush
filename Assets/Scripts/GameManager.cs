@@ -22,13 +22,16 @@ public class GameManager : MonoBehaviour
             lose("An Admin set hp to 0");
         }
     }
-    public void loseHp(string dm){
-        hp--;
-        if(hp == 0){
-            lose(dm);
-        }else{
-            deathMessage = dm;
-            loadLevel("Retry");
+    public void loseHp(){
+        if(!added){
+            added = true;
+            hp--;
+            if(hp == 0){
+                lose(GameObject.FindWithTag("GoalManager").GetComponent<GoalManager>().getDeathMessage());
+            }else{
+                deathMessage = GameObject.FindWithTag("GoalManager").GetComponent<GoalManager>().getDeathMessage();
+                loadLevel("Retry");
+            }
         }
     }
     public void lose(string dm){
@@ -52,6 +55,7 @@ public class GameManager : MonoBehaviour
     public void playScene(string scene){
         loadLevel(scene);
     }
+
     public string getDeathMessage(){
         return deathMessage;
     }
