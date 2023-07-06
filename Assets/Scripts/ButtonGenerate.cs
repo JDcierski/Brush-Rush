@@ -19,7 +19,7 @@ public class ButtonGenerate : MonoBehaviour
         if(genned){
             unGenerate();
         }else{
-            Generate();
+            generate();
         }
     }
 }
