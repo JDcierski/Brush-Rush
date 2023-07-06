@@ -9,7 +9,7 @@ public class Timer : MonoBehaviour
     private float startTime;
     public bool timing;
     
-    private void Start(){
+    void Start(){
         timing = false;
         time = 0;
     }
@@ -18,7 +18,7 @@ public class Timer : MonoBehaviour
         startTime = Time.time;
         timing = true;
     }
-    private void Update()
+    void Update()
     {
         if(timing){
             time = Time.time - startTime;

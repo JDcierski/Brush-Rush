@@ -5,7 +5,7 @@ using UnityEngine;
 public class ClickToStart : MonoBehaviour
 {
     public Timer timer;
-    private void start(){
+    private void Start(){
         timer = GameObject.FindWithTag("Timer").GetComponent<Timer>();
     }
     public void goAway(){

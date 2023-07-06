@@ -448,6 +448,7 @@ PrefabInstance:
       propertyPath: m_text
       value: 'Wash your toothbrush!
 
+
         Click To Start'
       objectReference: {fileID: 0}
     m_RemovedComponents: []

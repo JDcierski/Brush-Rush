@@ -147,6 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b9167aa98b9ba341833a60c426d9065, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timer: {fileID: 0}
 --- !u!1 &6580219691890717394
 GameObject:
   m_ObjectHideFlags: 0
@@ -214,6 +215,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: '<Level Name>
+
 
     Click To Start'
   m_isRightToLeft: 0

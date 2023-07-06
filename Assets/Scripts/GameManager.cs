@@ -9,6 +9,9 @@ public class GameManager : MonoBehaviour
     public string[] teethGames;
     public static int level;
     public static string deathMessage = "Test Message";
+    public GameObject transition;
+    public static bool loading = false;
+    public static bool added;
     
     public int getHp(){
         return hp;
@@ -25,28 +28,45 @@ public class GameManager : MonoBehaviour
             lose(dm);
         }else{
             deathMessage = dm;
-            SceneManager.LoadScene("Retry");
+            loadLevel("Retry");
         }
     }
     public void lose(string dm){
         deathMessage = dm;
-        SceneManager.LoadScene("LossScreen");
+        loadLevel("LossScreen");
     }
     public void playLevel(int l){
         level = l;
         replayLevel();
     }
     public void nextLevel(){
-        level += 1;
-        SceneManager.LoadScene(teethGames[level]);
+        if(!added){
+            added = true;
+            level += 1;
+            loadLevel(teethGames[level]);
+        }
     }
     public void replayLevel(){
-        SceneManager.LoadScene(teethGames[level]);
+        loadLevel(teethGames[level]);
     }
     public void playScene(string scene){
-        SceneManager.LoadScene(scene);
+        loadLevel(scene);
     }
     public string getDeathMessage(){
         return deathMessage;
+    }
+
+    public void loadLevel(string name){
+        if(!loading){
+            loading = true;
+            Instantiate(transition);
+            StartCoroutine(transitionLevel(name));
+        }
+    }
+    IEnumerator transitionLevel(string name){
+        yield return new WaitForSeconds(1.25f);
+        loading = false;
+        added = false;
+        SceneManager.LoadScene(name);
     }
 }

@@ -11,7 +11,11 @@ public class DraggableObject : MonoBehaviour
     public bool isHovered;
     private bool isDragging = false;
 
-    private void Update()
+    void Start(){
+        isHovered = false;
+        isDragging = false;
+    }
+    void Update()
     {
         myCam = GameObject.FindWithTag("MainCamera").GetComponent<Camera>();
         if(Input.GetMouseButtonDown(0) && isHovered){

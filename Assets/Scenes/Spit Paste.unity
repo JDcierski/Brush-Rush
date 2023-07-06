@@ -220,7 +220,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6580219691890717356, guid: 4d30dd46f7e3330408df7eb21eede935, type: 3}
       propertyPath: m_text
-      value: 'Spit out the paste!
+      value: 'Spit out the toothpaste!
+
 
         Click To Start'
       objectReference: {fileID: 0}

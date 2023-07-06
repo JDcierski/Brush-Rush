@@ -319,6 +319,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ClickToStart
       objectReference: {fileID: 0}
+    - target: {fileID: 6580219691613073752, guid: 4d30dd46f7e3330408df7eb21eede935, type: 3}
+      propertyPath: timer
+      value: 
+      objectReference: {fileID: 1999009283}
     - target: {fileID: 6580219691613073756, guid: 4d30dd46f7e3330408df7eb21eede935, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -407,6 +411,7 @@ PrefabInstance:
       propertyPath: m_text
       value: 'Add the toothpaste!
 
+
         Click To Start'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -416,6 +421,63 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6580219691613073756, guid: 4d30dd46f7e3330408df7eb21eede935, type: 3}
   m_PrefabInstance: {fileID: 1470708248}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1473213688
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 295396526535300677, guid: ff7c1288d8ac397468fb49fe6d9d6582, type: 3}
+      propertyPath: m_Name
+      value: GameManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 295396526535300683, guid: ff7c1288d8ac397468fb49fe6d9d6582, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 295396526535300683, guid: ff7c1288d8ac397468fb49fe6d9d6582, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 295396526535300683, guid: ff7c1288d8ac397468fb49fe6d9d6582, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 295396526535300683, guid: ff7c1288d8ac397468fb49fe6d9d6582, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 295396526535300683, guid: ff7c1288d8ac397468fb49fe6d9d6582, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 295396526535300683, guid: ff7c1288d8ac397468fb49fe6d9d6582, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 295396526535300683, guid: ff7c1288d8ac397468fb49fe6d9d6582, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 295396526535300683, guid: ff7c1288d8ac397468fb49fe6d9d6582, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 295396526535300683, guid: ff7c1288d8ac397468fb49fe6d9d6582, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 295396526535300683, guid: ff7c1288d8ac397468fb49fe6d9d6582, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 295396526535300683, guid: ff7c1288d8ac397468fb49fe6d9d6582, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ff7c1288d8ac397468fb49fe6d9d6582, type: 3}
 --- !u!1 &1650305590
 GameObject:
   m_ObjectHideFlags: 0
@@ -541,3 +603,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b0ebed056f1702408352a31ca8dbd7d, type: 3}
+--- !u!114 &1999009283 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 918642555948114623, guid: 9b0ebed056f1702408352a31ca8dbd7d, type: 3}
+  m_PrefabInstance: {fileID: 1999009282}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01799d23c6ee2324da290790ad881d22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Timer
   - GameManager
+  - TestZone
+  - Goal
   layers:
   - Default
   - TransparentFX
