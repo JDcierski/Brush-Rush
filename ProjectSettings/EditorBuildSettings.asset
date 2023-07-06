@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/LossScreen.unity
     guid: 14ac84cf4ce47814b9835ab2df631c66
   - enabled: 1
+    path: Assets/Scenes/Stage Select.unity
+    guid: 6838784204a3d3645a6a3ac184f35d4f
+  - enabled: 1
     path: Assets/Scenes/Pick Brush.unity
     guid: 44cfc6edd3b08b4429b66b0ff7da65a1
   - enabled: 1
