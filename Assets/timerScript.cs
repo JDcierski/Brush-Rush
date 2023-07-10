@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class timerScript : MonoBehaviour
 {
 
-    public Image image;
+    /*public Image image;
 
     public float tempFilledAmount;
 
@@ -30,5 +30,5 @@ public class timerScript : MonoBehaviour
         if(image.fillAmount != tempFilledAmount){
             currBar.setChanged(true);
         }
-    }
+    }*/
 }
