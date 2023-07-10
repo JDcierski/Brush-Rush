@@ -8,10 +8,12 @@ public class Timer : MonoBehaviour
     public float time;
     private float startTime;
     public bool timing;
-    
+    private barPiece bp;    
     void Start(){
+        bp = GetComponent<barPiece>();
         timing = false;
         time = 0;
+        bp.setFillAmount(1);
     }
     public void startTimer(){
         time = 0;
@@ -24,6 +26,8 @@ public class Timer : MonoBehaviour
             time = Time.time - startTime;
             if(time >= length){
                 GameObject.FindWithTag("GameManager").GetComponent<GameManager>().loseHp();
+            }else{
+                bp.setFillAmount(1 - time/length);
             }
         }
     }
