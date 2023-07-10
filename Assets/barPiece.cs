@@ -19,6 +19,12 @@ public class barPiece : MonoBehaviour
     {
         this.time = newTime;
     }
+    
+    public void setMaxTime(float newMaxTime)
+    {
+        this.maxTime = newMaxTime;
+    }
+
     public void setChanged(bool newChanged)
     {
         this.changed = newChanged;
