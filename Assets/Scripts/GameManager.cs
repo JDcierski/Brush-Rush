@@ -67,6 +67,7 @@ public class GameManager : MonoBehaviour
         loadLevel(scene);
     }
 
+
     public string getDeathMessage(){
         return deathMessage;
     }
@@ -83,5 +84,8 @@ public class GameManager : MonoBehaviour
         loading = false;
         added = false;
         SceneManager.LoadScene(name);
+    }
+    public void quitGame(){
+        Application.Quit();
     }
 }
