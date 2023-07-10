@@ -693,7 +693,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e64412862d055d9449fc3f7cba5bd206, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 4.75
+  time: 2.75
   beginOnStart: 1
   timer: {fileID: 0}
 --- !u!114 &939485991
@@ -1640,6 +1640,10 @@ PrefabInstance:
     - target: {fileID: 918642555948114622, guid: 9b0ebed056f1702408352a31ca8dbd7d, type: 3}
       propertyPath: m_Name
       value: Timer
+      objectReference: {fileID: 0}
+    - target: {fileID: 918642555948114623, guid: 9b0ebed056f1702408352a31ca8dbd7d, type: 3}
+      propertyPath: length
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1976450969174848635, guid: 9b0ebed056f1702408352a31ca8dbd7d, type: 3}
       propertyPath: m_RootOrder
