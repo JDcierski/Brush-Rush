@@ -12,6 +12,7 @@ TagManager:
   - GoalManager
   - Transition
   - CupZone
+  - BusBar
   layers:
   - Default
   - TransparentFX

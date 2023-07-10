@@ -5,15 +5,21 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public static int hp; 
+    public static int hp = 3; 
     public string[] teethGames;
     public static int level;
     public static string deathMessage = "Test Message";
     public Animator transition;
     public static bool loading = false;
     public static bool added;
+    private HealthScript bBar;
     void Start(){
         transition = GameObject.FindWithTag("Transition").GetComponent<Animator>();
+        if(GameObject.FindWithTag("BusBar") != null){
+            bBar = GameObject.FindWithTag("BusBar").GetComponent<HealthScript>();
+            bBar.setHp(hp);
+        }
+        
     }
     public int getHp(){
         return hp;
