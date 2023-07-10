@@ -10,6 +10,8 @@ TagManager:
   - Goal
   - WaterZone
   - GoalManager
+  - Transition
+  - CupZone
   layers:
   - Default
   - TransparentFX

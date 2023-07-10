@@ -9,10 +9,12 @@ public class GameManager : MonoBehaviour
     public string[] teethGames;
     public static int level;
     public static string deathMessage = "Test Message";
-    public GameObject transition;
+    public Animator transition;
     public static bool loading = false;
     public static bool added;
-    
+    void Start(){
+        transition = GameObject.FindWithTag("Transition").GetComponent<Animator>();
+    }
     public int getHp(){
         return hp;
     }
@@ -66,11 +68,11 @@ public class GameManager : MonoBehaviour
     public void loadLevel(string name){
         if(!loading){
             loading = true;
-            Instantiate(transition);
             StartCoroutine(transitionLevel(name));
         }
     }
     IEnumerator transitionLevel(string name){
+        transition.SetTrigger("LeaveScreen");
         yield return new WaitForSeconds(1.25f);
         loading = false;
         added = false;
