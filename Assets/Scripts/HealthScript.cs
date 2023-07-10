@@ -1,54 +1,39 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class HealthScript : MonoBehaviour
 {
 
-    public GameObject healthBar;
+    public RectTransform healthBar;
 
     public int health = 3;
 
-    public void SetHP(int newHP)
+    public void setHp(int newHP)
     {
         health = newHP;
 
         if(health == 3)
         {
-            healthBar.transform.position = new Vector3 (-9.3f, 4.3f, -1);
+            healthBar.localPosition = new Vector3(0f, 300f, 0f);
         }
         else if(health == 2)
         {
-            healthBar.transform.position = new Vector3 (-9.3f, 0, -1);
+            healthBar.localPosition = new Vector3(0f, 50f, 0f);
         }
         else if(health == 1)
         {
-            healthBar.transform.position = new Vector3 (-9.3f, -4.3f, -1);
+            healthBar.localPosition = new Vector3(0f, -200f, 0f);
         }
         else
         {
-            healthBar.transform.position = new Vector3 (-40, 0, 0);
+            healthBar.localPosition = new Vector3(0f, -300f, 0f);
         }
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        if(health == 3)
-        {
-            healthBar.transform.position = new Vector3 (-9.3f, 4.3f, -1);
-        }
-        else if(health == 2)
-        {
-            healthBar.transform.position = new Vector3 (-9.3f, 0, -1);
-        }
-        else if(health == 1)
-        {
-            healthBar.transform.position = new Vector3 (-9.3f, -4.3f, -1);
-        }
-        else
-        {
-            healthBar.transform.position = new Vector3 (-40, 0, 0);
-        }
     }
 }
