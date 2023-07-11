@@ -116,15 +116,18 @@ public class GameManager : MonoBehaviour
             playingLevel = true;
             added = true;
             level += 1;
-            if(level >= activeGames.Length){
+            if(remix){
+                if(level >= 15){
+                    remixComplete = true;
+                }
+                loadLevel(activeGames[Random.Range(0, activeGames.Length)]);
+            }else if(level >= activeGames.Length){
                 if(easy){
                     easyComplete = true;
                 }else if(medium){
                     mediumComplete = true;
                 }else if(hard){
                     hardComplete = true;
-                }else if(remix){
-                    remixComplete = true;
                 }
                 goStageSelect();
             }else{
