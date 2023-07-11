@@ -20,6 +20,11 @@ public class ToothPasteBottle : MonoBehaviour, IPointerDownHandler, IPointerUpHa
             paste.GetComponent<goal>().achieveGoal();
         }else{
             paste.GetComponent<goal>().failGoal();
+            if(paste.transform.localScale.x > targetSize){
+                paste.GetComponent<goal>().deathMessage = "Uh Oh! That's way too much toothpaste! I guess you could brush an elephant's teeth with that.";
+            }else{
+                paste.GetComponent<goal>().deathMessage = "Uh Oh! That's not enough toothpaste! I guess you could brush a hamster's teeth with that.";
+            }
         }
     }
     public void OnPointerDown(PointerEventData eventData){

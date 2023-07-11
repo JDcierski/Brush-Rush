@@ -1014,7 +1014,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   achieved: 0
-  deathMessage: Make sure to add water to the toothbrush!
+  deathMessage: Uh Oh! That brush is as dry as brick! You can't bursh your teeth
+    with that! Make sure to add water to it next time.
 --- !u!61 &1330828631
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1722,7 +1723,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   achieved: 1
-  deathMessage: Make sure to turn off the water!
+  deathMessage: Uh Oh! You forgot to turn off the faucet and now your house is flooded.
+    At least your pet fish will be happy.
 --- !u!114 &2022054428
 MonoBehaviour:
   m_ObjectHideFlags: 0
