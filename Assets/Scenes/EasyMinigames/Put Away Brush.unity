@@ -272,7 +272,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   achieved: 0
-  deathMessage: Uh Oh! You dropped your brush! Its all covered in hair now! I guess
+  deathMessage: Uh Oh! You dropped your brush! It's all covered in hair now! I guess
     you'll have to get a new one now.
 --- !u!114 &201194615
 MonoBehaviour:
