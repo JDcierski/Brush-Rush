@@ -224,4 +224,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   achieved: 0
-  deathMessage: Make sure to click the toothbrush!
+  deathMessage: Uh Oh! You can't brush your teeth with that! Try to pick the toothbrush.

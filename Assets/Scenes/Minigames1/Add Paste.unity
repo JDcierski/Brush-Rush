@@ -238,7 +238,7 @@ GameObject:
   - component: {fileID: 569299370}
   - component: {fileID: 569299369}
   m_Layer: 0
-  m_Name: ToothPaste (1)
+  m_Name: BackgroundPaste
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
