@@ -305,7 +305,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amp: 15
-  frequency: 1
+  frequency: 0.5
 --- !u!1 &470642241
 GameObject:
   m_ObjectHideFlags: 0
@@ -444,6 +444,10 @@ PrefabInstance:
     - target: {fileID: 918642555948114622, guid: 9b0ebed056f1702408352a31ca8dbd7d, type: 3}
       propertyPath: m_Name
       value: Timer
+      objectReference: {fileID: 0}
+    - target: {fileID: 918642555948114623, guid: 9b0ebed056f1702408352a31ca8dbd7d, type: 3}
+      propertyPath: length
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1976450969174848635, guid: 9b0ebed056f1702408352a31ca8dbd7d, type: 3}
       propertyPath: m_RootOrder

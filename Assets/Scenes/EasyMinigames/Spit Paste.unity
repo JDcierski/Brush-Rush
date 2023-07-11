@@ -368,6 +368,7 @@ GameObject:
   - component: {fileID: 446630526}
   - component: {fileID: 446630525}
   - component: {fileID: 446630528}
+  - component: {fileID: 446630529}
   m_Layer: 5
   m_Name: Sink
   m_TagString: Untagged
@@ -452,6 +453,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 446630529}
+        m_TargetAssemblyTypeName: ButtonGenerate, Assembly-CSharp
+        m_MethodName: generate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &446630526
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -508,6 +521,23 @@ MonoBehaviour:
   ampY: 5
   frequencyY: 2
   offsetY: 1
+--- !u!114 &446630529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446630523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef90ac2b4bf9bca488baec60a68553c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objToGen: {fileID: 1096077719742562979, guid: 20eaa12b610f53b478eac60181c03743, type: 3}
+  generatedObj: {fileID: 0}
+  genned: 0
+  genOnPos: 1
+  cam: {fileID: 0}
 --- !u!1 &586446535
 GameObject:
   m_ObjectHideFlags: 0
