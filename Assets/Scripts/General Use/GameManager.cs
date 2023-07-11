@@ -68,7 +68,7 @@ public class GameManager : MonoBehaviour
             added = true;
             level += 1;
             if(level >= teethGames.Length){
-                goStafeSelect();
+                goStageSelect();
             }else{
                 loadLevel(teethGames[level]);
             }
