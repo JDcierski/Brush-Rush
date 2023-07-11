@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e7744dd770941e44c95806819360bfbf
+guid: f32e016f7d8378543a4a42765c4747ee
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 75
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -105,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dirty toothbrush JUST DIRTINESS_0
+      name: Copy of kid1_0
       rect:
         serializedVersion: 2
-        x: 1104
-        y: 1311
-        width: 393
-        height: 110
+        x: 740
+        y: 0
+        width: 2126
+        height: 2480
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,8 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab518c25a9f3cf842b78849a9e696757
-      internalID: 1849792987
+      spriteID: 2fefe9c31d78cd44c9be146f950d93fe
+      internalID: 1459245886
       vertices: []
       indices: 
       edges: []
@@ -136,8 +136,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      dirty toothbrush JUST DIRTINESS_0: 1849792987
-      dirty toothbrush JUST DIRTINESS_1: 1464607184
+      Copy of kid1_0: 1459245886
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
