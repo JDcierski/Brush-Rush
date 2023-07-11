@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a92ff56365f0385419294bcff771d5cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teethGames:
+  easyGames:
   - Pick Brush
   - Add Paste
   - Add Water
@@ -52,4 +52,7 @@ MonoBehaviour:
   - Spit Paste
   - Wash Brush
   - Put Away Brush
+  mediumGames: []
+  hardGames: []
+  activeGames: []
   transition: {fileID: 7537344485534801548, guid: 82d8e290b6a041e4e80eb21b13705697, type: 3}

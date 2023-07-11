@@ -9,13 +9,13 @@ EditorBuildSettings:
     path: Assets/Scenes/TransitionScenes/StartScreen.unity
     guid: b9798675ede1eca41875aefa7ce66674
   - enabled: 1
-    path: Assets/Scenes/Minigames1/Add Paste.unity
+    path: Assets/Scenes/EasyMinigames/Add Paste.unity
     guid: d50d98698653d8248b39d65ecd0e94ba
   - enabled: 1
-    path: Assets/Scenes/Minigames1/Add Water.unity
+    path: Assets/Scenes/EasyMinigames/Add Water.unity
     guid: 681316f422bcf3d4ebb35c27a90728df
   - enabled: 1
-    path: Assets/Scenes/Minigames1/Brush Teeth.unity
+    path: Assets/Scenes/EasyMinigames/Brush Teeth.unity
     guid: f1dfa73496f571445b6adba2f6f836e3
   - enabled: 1
     path: Assets/Scenes/TransitionScenes/LossScreen.unity
@@ -24,18 +24,18 @@ EditorBuildSettings:
     path: Assets/Scenes/TransitionScenes/Stage Select.unity
     guid: 6838784204a3d3645a6a3ac184f35d4f
   - enabled: 1
-    path: Assets/Scenes/Minigames1/Pick Brush.unity
+    path: Assets/Scenes/EasyMinigames/Pick Brush.unity
     guid: 44cfc6edd3b08b4429b66b0ff7da65a1
   - enabled: 1
-    path: Assets/Scenes/Minigames1/Put Away Brush.unity
+    path: Assets/Scenes/EasyMinigames/Put Away Brush.unity
     guid: bc682494ab7a26d4ca42fcafd26fe00c
   - enabled: 1
     path: Assets/Scenes/TransitionScenes/Retry.unity
     guid: 5b66f0505bccde941bd4dbfab85a2cf5
   - enabled: 1
-    path: Assets/Scenes/Minigames1/Spit Paste.unity
+    path: Assets/Scenes/EasyMinigames/Spit Paste.unity
     guid: fec10b250ac2b8c479738ccaff042ce9
   - enabled: 1
-    path: Assets/Scenes/Minigames1/Wash Brush.unity
+    path: Assets/Scenes/EasyMinigames/Wash Brush.unity
     guid: b0838d0568603d6438c52d12644485a7
   m_configObjects: {}

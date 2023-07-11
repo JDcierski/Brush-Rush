@@ -7,7 +7,19 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static int hp = 3; 
-    public string[] teethGames;
+    public string[] easyGames;
+    public string[] mediumGames;
+    public string[] hardGames;
+    public string[] activeGames;
+    private bool easy;
+    private bool medium;
+    private bool hard;
+    private bool remix;
+    public static bool easyComplete = false;
+    public static bool mediumComplete = false;
+    public static bool hardComplete = false;
+    public static bool remixComplete = false;
+    private static string[] activeLevels;
     public static int level;
     public static string deathMessage = "Test Message";
     public Animator transition;
@@ -40,6 +52,26 @@ public class GameManager : MonoBehaviour
             lose("An Admin set hp to 0");
         }
     }
+    public void loadEasy(){
+        easy = true;
+        activeLevels = easyGames;
+        playLevel(0);
+    }
+    public void loadMedium(){
+        medium = true;
+        activeLevels = mediumGames;
+        playLevel(0);
+    }
+    public void loadHard(){
+        hard = true;
+        activeLevels = hardGames;
+        playLevel(0);
+    }
+    public void loadRemix(){
+        remix = true;
+        activeLevels = hardGames;
+        playLevel(0);
+    }
     public void loseHp(){
         if(!added){
             added = true;
@@ -67,19 +99,32 @@ public class GameManager : MonoBehaviour
             playingLevel = true;
             added = true;
             level += 1;
-            if(level >= teethGames.Length){
+            if(level >= activeGames.Length){
+                if(easy){
+                    easyComplete = true;
+                }else if(medium){
+                    mediumComplete = true;
+                }else if(hard){
+                    hardComplete = true;
+                }else if(remix){
+                    remixComplete = true;
+                }
                 goStageSelect();
             }else{
-                loadLevel(teethGames[level]);
+                loadLevel(activeGames[level]);
             }
         }
     }
     public void goStageSelect(){
+        easy = false;
+        medium = false;
+        hard = false;
+        remix = false;
         loadLevel("Stage Select");
     }
     public void replayLevel(){
         playingLevel = false;
-        loadLevel(teethGames[level]);
+        loadLevel(activeGames[level]);
     }
     public void playScene(string scene){
         loadLevel(scene);
