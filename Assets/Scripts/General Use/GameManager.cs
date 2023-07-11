@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     public string[] easyGames;
     public string[] mediumGames;
     public string[] hardGames;
-    public string[] activeGames;
+    public static string[] activeGames;
     private bool easy;
     private bool medium;
     private bool hard;
@@ -19,7 +19,6 @@ public class GameManager : MonoBehaviour
     public static bool mediumComplete = false;
     public static bool hardComplete = false;
     public static bool remixComplete = false;
-    private static string[] activeLevels;
     public static int level;
     public static string deathMessage = "Test Message";
     public Animator transition;
@@ -52,24 +51,30 @@ public class GameManager : MonoBehaviour
             lose("An Admin set hp to 0");
         }
     }
+    public void equalStringArray(string[] tis, string[] that){
+        tis = new string[that.Length];
+        for(int i = 0; i < that.Length; i++){
+            tis[i] = that[i];
+        }
+    }
     public void loadEasy(){
         easy = true;
-        activeLevels = easyGames;
+        activeGames = easyGames;
         playLevel(0);
     }
     public void loadMedium(){
         medium = true;
-        activeLevels = mediumGames;
+        activeGames = mediumGames;
         playLevel(0);
     }
     public void loadHard(){
         hard = true;
-        activeLevels = hardGames;
+        activeGames = hardGames;
         playLevel(0);
     }
     public void loadRemix(){
         remix = true;
-        activeLevels = hardGames;
+        activeGames = hardGames;
         playLevel(0);
     }
     public void loseHp(){
