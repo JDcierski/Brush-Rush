@@ -11,10 +11,10 @@ public class GameManager : MonoBehaviour
     public string[] mediumGames;
     public string[] hardGames;
     public static string[] activeGames;
-    private bool easy;
-    private bool medium;
-    private bool hard;
-    private bool remix;
+    private static bool easy = false;
+    private static bool medium = false;
+    private static bool hard = false;
+    private static bool remix = false;
     public static bool easyComplete = false;
     public static bool mediumComplete = false;
     public static bool hardComplete = false;
@@ -41,6 +41,18 @@ public class GameManager : MonoBehaviour
             bBar.setHp(hp);
         }
         lostLevel = false;
+    }
+    public bool getEasyComplete(){
+        return easyComplete;
+    }
+    public bool getMediumComplete(){
+        return mediumComplete;
+    }
+    public bool getHardComplete(){
+        return hardComplete;
+    }
+    public bool getRemixComplete(){
+        return remixComplete;
     }
     public int getHp(){
         return hp;
