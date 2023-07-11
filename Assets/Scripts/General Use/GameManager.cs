@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour
     private HealthScript bBar;
     private static bool lostLevel = false;
     private static bool playingLevel = false;
+    private float remixCount;
     void Start(){
         transition = GameObject.FindWithTag("Transition").GetComponent<Animator>();
         if(lostLevel){
@@ -85,6 +86,7 @@ public class GameManager : MonoBehaviour
         playLevel(0);
     }
     public void loadRemix(){
+        remixCount = 0;
         remix = true;
         activeGames = hardGames;
         playLevel(0);
@@ -117,10 +119,12 @@ public class GameManager : MonoBehaviour
             added = true;
             level += 1;
             if(remix){
-                if(level >= 15){
+                remixCount++;
+                if(remixCount >= 15){
                     remixComplete = true;
                 }
-                loadLevel(activeGames[Random.Range(0, activeGames.Length)]);
+                level = Random.Range(0, activeGames.Length);
+                loadLevel(activeGames[level]);
             }else if(level >= activeGames.Length){
                 if(easy){
                     easyComplete = true;
@@ -129,7 +133,12 @@ public class GameManager : MonoBehaviour
                 }else if(hard){
                     hardComplete = true;
                 }
-                goStageSelect();
+                easy = false;
+                medium = false;
+                hard = false;
+                remix = false;
+                hp = 3;
+                loadLevel("WinScreen");
             }else{
                 loadLevel(activeGames[level]);
             }

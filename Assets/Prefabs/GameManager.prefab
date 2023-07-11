@@ -52,7 +52,20 @@ MonoBehaviour:
   - Spit Paste
   - Wash Brush
   - Put Away Brush
-  mediumGames: []
-  hardGames: []
-  activeGames: []
+  mediumGames:
+  - Pick Brush
+  - Add Paste
+  - Add Water
+  - Brush Teeth
+  - Spit Paste
+  - Wash Brush
+  - Put Away Brush
+  hardGames:
+  - Pick Brush
+  - Add Paste
+  - Add Water
+  - Brush Teeth
+  - Spit Paste
+  - Wash Brush
+  - Put Away Brush
   transition: {fileID: 7537344485534801548, guid: 82d8e290b6a041e4e80eb21b13705697, type: 3}

@@ -36,6 +36,9 @@ EditorBuildSettings:
     path: Assets/Scenes/EasyMinigames/Spit Paste.unity
     guid: fec10b250ac2b8c479738ccaff042ce9
   - enabled: 1
+    path: Assets/Scenes/TransitionScenes/WinScreen.unity
+    guid: 1443ebf9e2cb1c841953ca8c49057ca0
+  - enabled: 1
     path: Assets/Scenes/EasyMinigames/Wash Brush.unity
     guid: b0838d0568603d6438c52d12644485a7
   m_configObjects: {}
