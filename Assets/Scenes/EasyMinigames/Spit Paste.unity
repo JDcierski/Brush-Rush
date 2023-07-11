@@ -867,8 +867,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   achieved: 0
-  deathMessage: Uh Oh! You didn't spit out all the toothpaste! You can't eat that!
-    You'll have to keep in you pocket until later I guess.
+  deathMessage: Uh Oh! You didn't spit out all of the toothpaste! You can't eat that!
+    You'll have to keep in your pocket until later I guess.
 --- !u!1 &1001449954
 GameObject:
   m_ObjectHideFlags: 0
