@@ -10,6 +10,7 @@ public class DraggableObject : MonoBehaviour
     private float startYPos;
     public bool isHovered;
     private bool isDragging = false;
+    
 
     void Start(){
         isHovered = false;

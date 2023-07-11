@@ -137,6 +137,7 @@ public class GameManager : MonoBehaviour
         medium = false;
         hard = false;
         remix = false;
+        hp = 3;
         loadLevel("Stage Select");
     }
     public void replayLevel(){
