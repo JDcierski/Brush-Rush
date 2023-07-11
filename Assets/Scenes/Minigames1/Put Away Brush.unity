@@ -272,7 +272,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   achieved: 0
-  deathMessage: Make sure you drop the toothbrush in the cup!
+  deathMessage: Uh Oh! You dropped your brush! Its all covered in hair now! I guess
+    you'll have to get a new one now.
 --- !u!114 &201194615
 MonoBehaviour:
   m_ObjectHideFlags: 0
