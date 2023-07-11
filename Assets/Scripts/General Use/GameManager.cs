@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
@@ -13,13 +14,22 @@ public class GameManager : MonoBehaviour
     public static bool loading = false;
     public static bool added;
     private HealthScript bBar;
+    private static bool lostLevel = false;
+    private static bool playingLevel = false;
     void Start(){
         transition = GameObject.FindWithTag("Transition").GetComponent<Animator>();
+        if(lostLevel){
+            transition.transform.GetComponent<Image>().color = Color.red;
+        }else if(playingLevel){
+            transition.transform.GetComponent<Image>().color = Color.green;
+        }else{
+            transition.transform.GetComponent<Image>().color = Color.black;
+        }
         if(GameObject.FindWithTag("BusBar") != null){
             bBar = GameObject.FindWithTag("BusBar").GetComponent<HealthScript>();
             bBar.setHp(hp);
         }
-        
+        lostLevel = false;
     }
     public int getHp(){
         return hp;
@@ -34,6 +44,8 @@ public class GameManager : MonoBehaviour
         if(!added){
             added = true;
             hp--;
+            lostLevel = true;
+            playingLevel = false;
             if(hp == 0){
                 lose(GameObject.FindWithTag("GoalManager").GetComponent<GoalManager>().getDeathMessage());
             }else{
@@ -52,15 +64,21 @@ public class GameManager : MonoBehaviour
     }
     public void nextLevel(){
         if(!added){
+            playingLevel = true;
             added = true;
             level += 1;
             if(level >= teethGames.Length){
-                loadLevel("Stage Select");
+                goStafeSelect();
+            }else{
+                loadLevel(teethGames[level]);
             }
-            loadLevel(teethGames[level]);
         }
     }
+    public void goStageSelect(){
+        loadLevel("Stage Select");
+    }
     public void replayLevel(){
+        playingLevel = false;
         loadLevel(teethGames[level]);
     }
     public void playScene(string scene){
@@ -79,6 +97,13 @@ public class GameManager : MonoBehaviour
         }
     }
     IEnumerator transitionLevel(string name){
+        if(lostLevel){
+            transition.transform.GetComponent<Image>().color = Color.red;
+        }else if(playingLevel){
+            transition.transform.GetComponent<Image>().color = Color.green;
+        }else{
+            transition.transform.GetComponent<Image>().color = Color.black;
+        }
         transition.SetTrigger("LeaveScreen");
         yield return new WaitForSeconds(1.25f);
         loading = false;
