@@ -15,6 +15,7 @@ public class HoldInVelocityZone : MonoBehaviour
     Vector3 pos, velocity;
     public float targetVelocity;
     public float xVelocity;
+    public float yVelocity;
 
     // Start is called before the first frame update
     void Start()
@@ -32,8 +33,9 @@ public class HoldInVelocityZone : MonoBehaviour
         velocity = (transform.position - pos) / Time.deltaTime;
         pos = transform.position;
         xVelocity = Mathf.Abs(velocity.x) / 100;
+        yVelocity = Mathf.Abs(velocity.y) / 100;
 
-        if(inZone && velocity.x >= targetVelocity){
+        if(inZone && (velocity.x >= targetVelocity || velocity.y >= targetVelocity)){
             time += Time.time - lastTime;
         }
         lastTime = Time.time;

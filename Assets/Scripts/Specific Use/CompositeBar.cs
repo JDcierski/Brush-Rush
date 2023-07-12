@@ -45,6 +45,8 @@ public class CompositeBar : MonoBehaviour
         }else{
             dTimer.text = twoTime / 60 + ":" + twoTime % 60;
         }
-        gross.color = new Color(1f, 1f, 1f, 255f * (1f - fill));
+        Color c = new Color(1f, 1f, 1f);
+        c.a = (1f - fill);
+        gross.color = c;
     }
 }

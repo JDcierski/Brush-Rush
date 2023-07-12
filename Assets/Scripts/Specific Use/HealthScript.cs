@@ -24,7 +24,7 @@ public class HealthScript : MonoBehaviour
         }
         else if(health == 1)
         {
-            healthBar.localPosition = new Vector3(0f, -200f, 0f);
+            healthBar.localPosition = new Vector3(0f, -175f, 0f);
         }
         else
         {

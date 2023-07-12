@@ -1055,9 +1055,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zoneTag: WaterZone
+  inZone: 0
   time: 0
   achieved: 0
-  inZone: 0
   timeInZone: 1
   g: {fileID: 0}
 --- !u!1001 &1531747915
@@ -1425,7 +1425,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 837933982859788904, guid: 199f3ae272a21d040a6fb3ab9796518a, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 25
+      value: 75
       objectReference: {fileID: 0}
     - target: {fileID: 837933982859788904, guid: 199f3ae272a21d040a6fb3ab9796518a, type: 3}
       propertyPath: m_SizeDelta.y
@@ -1710,6 +1710,8 @@ MonoBehaviour:
   objToGen: {fileID: 1096077719742562979, guid: 8cde7067f230ad443a9b3bb62e8b9ab6, type: 3}
   generatedObj: {fileID: 0}
   genned: 0
+  genOnPos: 0
+  cam: {fileID: 0}
 --- !u!114 &2022054427
 MonoBehaviour:
   m_ObjectHideFlags: 0

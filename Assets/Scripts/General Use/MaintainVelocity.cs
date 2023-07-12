@@ -12,6 +12,7 @@ public class MaintainVelocity : MonoBehaviour
     public float timeInVel;
     public goal g;
     private float xVelocity;
+    private float yVelocity;
     void Awake()
     {
         time = 0;
@@ -24,8 +25,9 @@ public class MaintainVelocity : MonoBehaviour
         velocity = (transform.position - pos) / Time.deltaTime;
         pos = transform.position;
         xVelocity = Mathf.Abs(velocity.x) / 100;
+        yVelocity = Mathf.Abs(velocity.y) / 100;
 
-        if(velocity.x >= targetVelocity){
+        if(velocity.x >= targetVelocity || velocity.x >= targetVelocity){
             time += Time.time - lastTime;
         }
         lastTime = Time.time;
