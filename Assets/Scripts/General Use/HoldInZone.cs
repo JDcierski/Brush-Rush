@@ -5,10 +5,10 @@ using UnityEngine;
 public class HoldInZone : MonoBehaviour
 {
     public string zoneTag;
+    public bool inZone;
     public float time;
     public bool achieved;
     private float lastTime;
-    public bool inZone;
     public float timeInZone;
     public goal g;
 

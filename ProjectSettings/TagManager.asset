@@ -13,6 +13,11 @@ TagManager:
   - Transition
   - CupZone
   - BusBar
+  - middle
+  - right
+  - left
+  - gums
+  - teeth
   layers:
   - Default
   - TransparentFX
@@ -20,8 +25,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - invis
+  - brushZone
   - 
   - 
   - 

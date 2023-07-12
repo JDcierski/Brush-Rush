@@ -18,6 +18,9 @@ public class IncrementObjective : MonoBehaviour
             bar = GetComponent<Slider>();
         }
     }
+    public void setValue(int n){
+        num = n;
+    }
     public void increment(int n){
         num += n;
     }
