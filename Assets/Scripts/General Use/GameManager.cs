@@ -156,6 +156,7 @@ public class GameManager : MonoBehaviour
         hard = false;
         remix = false;
         hp = 3;
+        GameObject.FindWithTag("SongPlayer").GetComponent<SongPlayer>().playTitle();
         loadLevel("Stage Select");
     }
     public void replayLevel(){
