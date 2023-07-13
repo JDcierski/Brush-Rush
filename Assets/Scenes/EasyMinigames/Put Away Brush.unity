@@ -287,9 +287,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zoneTag: CupZone
+  inZone: 0
   time: 0
   achieved: 0
-  inZone: 0
   timeInZone: 0.1
   g: {fileID: 201194614}
 --- !u!114 &201194616
@@ -1224,7 +1224,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 837933982859788904, guid: 199f3ae272a21d040a6fb3ab9796518a, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 25
+      value: 75
       objectReference: {fileID: 0}
     - target: {fileID: 837933982859788904, guid: 199f3ae272a21d040a6fb3ab9796518a, type: 3}
       propertyPath: m_SizeDelta.y

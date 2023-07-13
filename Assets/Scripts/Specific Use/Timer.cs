@@ -19,6 +19,7 @@ public class Timer : MonoBehaviour
         time = 0;
         startTime = Time.time;
         timing = true;
+        GetComponent<AudioSource>().Play();
     }
     void Update()
     {

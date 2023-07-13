@@ -16,7 +16,7 @@ public class ButtonGenerate : MonoBehaviour
         if(genOnPos){
             Vector3 pos = Camera.main.ScreenToWorldPoint(gameObject.GetComponent<RectTransform>().localPosition);
             genned = true;
-            generatedObj = Instantiate(objToGen, new Vector3 (pos.x + 17.78f, pos.y + 10f, -9.5f), Quaternion.Euler(0f, 0f, 0f));
+            generatedObj = Instantiate(objToGen, new Vector3 (pos.x + 17.78f, pos.y + 10f, -9.5f), Quaternion.Euler(0f, 0f, 0f), transform);
         }else{
             genned = true;
             generatedObj = Instantiate(objToGen);

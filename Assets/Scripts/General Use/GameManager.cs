@@ -175,6 +175,7 @@ public class GameManager : MonoBehaviour
         if(lostLevel){
             transition.transform.GetComponent<Image>().color = Color.red;
         }else if(playingLevel){
+            transition.transform.parent.GetChild(0).gameObject.GetComponent<AudioSource>().Play();
             transition.transform.GetComponent<Image>().color = Color.green;
         }else{
             transition.transform.GetComponent<Image>().color = Color.black;
