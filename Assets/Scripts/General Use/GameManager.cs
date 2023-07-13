@@ -71,21 +71,25 @@ public class GameManager : MonoBehaviour
         }
     }
     public void loadEasy(){
+        GameObject.FindWithTag("SongPlayer").GetComponent<SongPlayer>().playNormal();
         easy = true;
         activeGames = easyGames;
         playLevel(0);
     }
     public void loadMedium(){
+        GameObject.FindWithTag("SongPlayer").GetComponent<SongPlayer>().playFast();
         medium = true;
         activeGames = mediumGames;
         playLevel(0);
     }
     public void loadHard(){
+        GameObject.FindWithTag("SongPlayer").GetComponent<SongPlayer>().playFast();
         hard = true;
         activeGames = hardGames;
         playLevel(0);
     }
     public void loadRemix(){
+        GameObject.FindWithTag("SongPlayer").GetComponent<SongPlayer>().playFast();
         remixCount = 0;
         remix = true;
         activeGames = hardGames;
@@ -98,6 +102,7 @@ public class GameManager : MonoBehaviour
             lostLevel = true;
             playingLevel = false;
             if(hp == 0){
+                GameObject.FindWithTag("SongPlayer").GetComponent<SongPlayer>().stopPlaying();
                 lose(GameObject.FindWithTag("GoalManager").GetComponent<GoalManager>().getDeathMessage());
             }else{
                 deathMessage = GameObject.FindWithTag("GoalManager").GetComponent<GoalManager>().getDeathMessage();
@@ -138,6 +143,7 @@ public class GameManager : MonoBehaviour
                 hard = false;
                 remix = false;
                 hp = 3;
+                GameObject.FindWithTag("SongPlayer").GetComponent<SongPlayer>().stopPlaying();
                 loadLevel("WinScreen");
             }else{
                 loadLevel(activeGames[level]);
