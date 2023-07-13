@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1f7bdc219bb2e5440aea055d71f68ca0
+guid: a666c3ce9ccae8e45b3450c69ca55d30
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 80
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -105,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: clock background timer image_0
+      name: back of cup image_0
       rect:
         serializedVersion: 2
-        x: 662
-        y: 397
-        width: 510
-        height: 486
+        x: 786
+        y: 749
+        width: 266
+        height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,8 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 74f55d436a78ea1468bd63e57e8b9eb2
-      internalID: 613320308
+      spriteID: acf3497ee95209645aa627ebfbed5894
+      internalID: -1441568054
       vertices: []
       indices: 
       edges: []
@@ -136,7 +136,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      clock background timer image_0: 613320308
+      back of cup image_0: -1441568054
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
