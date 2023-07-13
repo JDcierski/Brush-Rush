@@ -21,6 +21,10 @@ public class CompositeBar : MonoBehaviour
     public TMP_Text dTimer;
     public int twoTime;
     public SpriteRenderer gross;
+    public SpriteRenderer grossTop;
+    public SpriteRenderer grossMid;
+    public SpriteRenderer grossRight;
+    public SpriteRenderer grossLeft;
 
 
     // Start is called before the first frame update
@@ -45,8 +49,10 @@ public class CompositeBar : MonoBehaviour
         }else{
             dTimer.text = twoTime / 60 + ":" + twoTime % 60;
         }
-        Color c = new Color(1f, 1f, 1f);
-        c.a = (1f - fill);
-        gross.color = c;
+        gross.color = new Color(1f, 1f, 1f, 1f - timeProgress);
+        grossTop.color = new Color(1f, 1f, 1f, 1f - gumProgress);
+        grossMid.color = new Color(1f, 1f, 1f, 1f - middleProgress);
+        grossRight.color = new Color(1f, 1f, 1f, 1f - rightProgress);
+        grossLeft.color = new Color(1f, 1f, 1f, 1f - leftProgress);
     }
 }

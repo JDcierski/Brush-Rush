@@ -18,6 +18,7 @@ TagManager:
   - left
   - gums
   - teeth
+  - SongPlayer
   layers:
   - Default
   - TransparentFX

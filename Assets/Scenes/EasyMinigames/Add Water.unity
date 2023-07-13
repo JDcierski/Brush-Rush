@@ -1058,7 +1058,7 @@ MonoBehaviour:
   inZone: 0
   time: 0
   achieved: 0
-  timeInZone: 1
+  timeInZone: 0.25
   g: {fileID: 0}
 --- !u!1001 &1531747915
 PrefabInstance:
