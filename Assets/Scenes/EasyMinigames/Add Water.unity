@@ -372,7 +372,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.7, y: 0}
+  m_Offset: {x: -0.013104558, y: 0.00074100494}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -383,7 +383,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8, y: 19}
+  m_Size: {x: 2.5964959, y: 19.318514}
   m_EdgeRadius: 0
 --- !u!114 &476996586
 MonoBehaviour:
@@ -1014,7 +1014,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   achieved: 0
-  deathMessage: Uh Oh! That brush is as dry as brick! You can't bursh your teeth
+  deathMessage: Uh Oh! That brush is as dry as brick! You can't brush your teeth
     with that! Make sure to add water to it next time.
 --- !u!61 &1330828631
 BoxCollider2D:
@@ -1413,7 +1413,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 837933982859788904, guid: 199f3ae272a21d040a6fb3ab9796518a, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 837933982859788904, guid: 199f3ae272a21d040a6fb3ab9796518a, type: 3}
       propertyPath: m_AnchorMin.x
@@ -1421,7 +1421,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 837933982859788904, guid: 199f3ae272a21d040a6fb3ab9796518a, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 837933982859788904, guid: 199f3ae272a21d040a6fb3ab9796518a, type: 3}
       propertyPath: m_SizeDelta.x
@@ -1429,7 +1429,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 837933982859788904, guid: 199f3ae272a21d040a6fb3ab9796518a, type: 3}
       propertyPath: m_SizeDelta.y
-      value: -100
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 837933982859788904, guid: 199f3ae272a21d040a6fb3ab9796518a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1547,7 +1547,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 918642555948114623, guid: 9b0ebed056f1702408352a31ca8dbd7d, type: 3}
       propertyPath: length
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1976450969174848635, guid: 9b0ebed056f1702408352a31ca8dbd7d, type: 3}
       propertyPath: m_RootOrder
