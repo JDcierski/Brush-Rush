@@ -19,6 +19,7 @@ TagManager:
   - gums
   - teeth
   - SongPlayer
+  - back
   layers:
   - Default
   - TransparentFX
