@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 22fe5fa7893a5df4dac7c119b4cb5974
+guid: 194fed3a9cb576245a2cd213290469bc
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 50
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -105,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: scratch from brushing v1 image_0
+      name: big toothpaste foam image_0
       rect:
         serializedVersion: 2
-        x: 705
-        y: 557
-        width: 117
-        height: 105
+        x: 384
+        y: 478
+        width: 349
+        height: 205
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,8 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 269ea3ca43016f448ac224c322929b3d
-      internalID: -1349649820
+      spriteID: 6837330118807dc43a2df44858d3cc78
+      internalID: 1888122405
       vertices: []
       indices: 
       edges: []
@@ -136,7 +136,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      scratch from brushing v1 image_0: -1349649820
+      big toothpaste foam image_0: 1888122405
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

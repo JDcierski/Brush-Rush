@@ -5,6 +5,7 @@ using UnityEngine;
 public class ToothBrushInjury : MonoBehaviour
 {
     public GameObject injury;
+    public GameObject injury2;
     
     public string zoneTag;
     public bool inZone;
@@ -38,7 +39,11 @@ public class ToothBrushInjury : MonoBehaviour
         }
         lastTime = Time.time;
         if(time >= timeInZone){
-            Instantiate(injury, transform.position, transform.rotation);
+            if(Random.Range(0, 2) == 1){
+                Instantiate(injury2, transform.position + new Vector3(0f, 0f, 1f), transform.rotation);
+            }else{
+                Instantiate(injury, transform.position + new Vector3(0f, 0f, 1f), transform.rotation);
+            }
             time = 0;
         }
 
@@ -51,6 +56,7 @@ public class ToothBrushInjury : MonoBehaviour
     void OnTriggerExit2D(Collider2D col){
         if(col.gameObject.tag == zoneTag){
             inZone = false;
+            time = 0;
         }
     }
 }
