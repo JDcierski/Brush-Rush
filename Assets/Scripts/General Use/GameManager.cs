@@ -97,6 +97,7 @@ public class GameManager : MonoBehaviour
     }
     public void loseHp(){
         if(!added){
+            transition.transform.parent.GetChild(1).gameObject.GetComponent<AudioSource>().Play();
             added = true;
             hp--;
             lostLevel = true;
@@ -106,6 +107,22 @@ public class GameManager : MonoBehaviour
                 lose(GameObject.FindWithTag("GoalManager").GetComponent<GoalManager>().getDeathMessage());
             }else{
                 deathMessage = GameObject.FindWithTag("GoalManager").GetComponent<GoalManager>().getDeathMessage();
+                loadLevel("Retry");
+            }
+        }
+    }
+    public void loseWithMessage(string dm){
+        if(!added){
+            transition.transform.parent.GetChild(1).gameObject.GetComponent<AudioSource>().Play();
+            added = true;
+            hp--;
+            lostLevel = true;
+            playingLevel = false;
+            if(hp == 0){
+                GameObject.FindWithTag("SongPlayer").GetComponent<SongPlayer>().stopPlaying();
+                lose(dm);
+            }else{
+                deathMessage = dm;
                 loadLevel("Retry");
             }
         }

@@ -20,6 +20,7 @@ TagManager:
   - teeth
   - SongPlayer
   - back
+  - Injury
   layers:
   - Default
   - TransparentFX
