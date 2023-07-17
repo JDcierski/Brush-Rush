@@ -89,6 +89,7 @@ GameObject:
   - component: {fileID: 5055232456003901571}
   - component: {fileID: 5055232456003901570}
   - component: {fileID: 880669622098503032}
+  - component: {fileID: 833037403573884177}
   m_Layer: 5
   m_Name: ToothBrushButton
   m_TagString: Goal
@@ -225,3 +226,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   achieved: 0
   deathMessage: Uh Oh! You can't brush your teeth with that! Try to pick the toothbrush.
+--- !u!114 &833037403573884177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5055232456003901309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae02fa87e58f3ad4c95eba49a7195064, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ampX: 2
+  frequencyX: 1
+  offsetX: 0
+  ampY: 1
+  frequencyY: 2
+  offsetY: 0

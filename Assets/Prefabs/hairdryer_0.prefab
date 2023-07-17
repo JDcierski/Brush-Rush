@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4337207514246630491}
   - component: {fileID: 4337207514246630490}
+  - component: {fileID: 5053403859817895461}
   m_Layer: 0
   m_Name: hairdryer_0
   m_TagString: Untagged
@@ -84,3 +85,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5053403859817895461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4337207514246630485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a8a891c6094f0441bde2df7a78f14b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ampX: 1
+  frequencyX: 1
+  offsetX: 0
+  ampY: 1
+  frequencyY: 1
+  offsetY: 0
