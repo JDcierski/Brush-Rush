@@ -2278,6 +2278,8 @@ MonoBehaviour:
   xVelocity: 0
   yVelocity: 0
   foam: 0
+  infront: 0
+  n: 0
 --- !u!114 &1237237203
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2295,11 +2297,13 @@ MonoBehaviour:
   zoneTag: teeth
   inZone: 0
   time: 0
-  timeInZone: 0.01
+  timeInZone: 0.02
   targetVelocity: 2
   xVelocity: 0
   yVelocity: 0
   foam: 1
+  infront: 0
+  n: 0
 --- !u!1001 &1245907371
 PrefabInstance:
   m_ObjectHideFlags: 0
