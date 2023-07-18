@@ -48,13 +48,13 @@ public class ToothBrushInjury : MonoBehaviour
         if(time >= timeInZone){
             if(Random.Range(0, 2) == 1){
                 if(infront){
-                    Instantiate(injury2, transform.position + new Vector3(0f, 0f, -1f), transform.rotation);
+                    Instantiate(injury2, transform.position + new Vector3(0f, 0f, -1f), Quaternion.Euler(90f, 0f, 0f));
                 }else{
                     Instantiate(injury2, transform.position + new Vector3(0f, 0f, 1f), transform.rotation);
                 }
             }else{
                 if(infront){
-                    Instantiate(injury, transform.position + new Vector3(0f, 0f, -1f), transform.rotation);
+                    Instantiate(injury, transform.position + new Vector3(0f, 0f, -1f), Quaternion.Euler(90f, 0f, 0f));
                 }else{
                     Instantiate(injury, transform.position + new Vector3(0f, 0f, 1f), transform.rotation);
                 }
