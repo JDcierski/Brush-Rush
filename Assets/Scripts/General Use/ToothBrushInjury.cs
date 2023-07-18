@@ -19,6 +19,7 @@ public class ToothBrushInjury : MonoBehaviour
     public float yVelocity;
     public bool foam;
     private float lastY;
+    public bool infront;
 
     // Start is called before the first frame update
     void Start()
@@ -46,9 +47,17 @@ public class ToothBrushInjury : MonoBehaviour
         lastTime = Time.time;
         if(time >= timeInZone){
             if(Random.Range(0, 2) == 1){
-                Instantiate(injury2, transform.position + new Vector3(0f, 0f, 1f), transform.rotation);
+                if(infront){
+                    Instantiate(injury2, transform.position + new Vector3(0f, 0f, -1f), transform.rotation);
+                }else{
+                    Instantiate(injury2, transform.position + new Vector3(0f, 0f, 1f), transform.rotation);
+                }
             }else{
-                Instantiate(injury, transform.position + new Vector3(0f, 0f, 1f), transform.rotation);
+                if(infront){
+                    Instantiate(injury, transform.position + new Vector3(0f, 0f, -1f), transform.rotation);
+                }else{
+                    Instantiate(injury, transform.position + new Vector3(0f, 0f, 1f), transform.rotation);
+                }
             }
             time = 0;
         }
