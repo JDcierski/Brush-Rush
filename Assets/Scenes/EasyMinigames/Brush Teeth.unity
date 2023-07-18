@@ -812,7 +812,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1926,8 +1926,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   achieved: 0
-  deathMessage: Uh Oh! You didn't brush your the back of your teeth! You need to
-    make sure to brush your whole mouth.
+  deathMessage: Uh Oh! You didn't brush the back of your teeth! You need to make
+    sure to brush your whole mouth.
 --- !u!61 &1147806100
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1938,7 +1938,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -2198,7 +2198,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -2274,9 +2274,10 @@ MonoBehaviour:
   inZone: 0
   time: 0
   timeInZone: 0.5
-  targetVelocity: 1
+  targetVelocity: 2
   xVelocity: 0
   yVelocity: 0
+  foam: 0
 --- !u!114 &1237237203
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2294,10 +2295,11 @@ MonoBehaviour:
   zoneTag: teeth
   inZone: 0
   time: 0
-  timeInZone: 0.05
+  timeInZone: 0.01
   targetVelocity: 2
   xVelocity: 0
   yVelocity: 0
+  foam: 1
 --- !u!1001 &1245907371
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3587,7 +3589,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -4569,7 +4571,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}

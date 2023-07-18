@@ -17,6 +17,8 @@ public class ToothBrushInjury : MonoBehaviour
     public float targetVelocity;
     public float xVelocity;
     public float yVelocity;
+    public bool foam;
+    private float lastY;
 
     // Start is called before the first frame update
     void Start()
@@ -36,6 +38,10 @@ public class ToothBrushInjury : MonoBehaviour
 
         if(inZone && (velocity.x >= targetVelocity || velocity.y >= targetVelocity)){
             time += Time.time - lastTime;
+        }else{
+            if(foam){
+                time = 0;
+            }
         }
         lastTime = Time.time;
         if(time >= timeInZone){
