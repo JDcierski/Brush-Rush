@@ -992,6 +992,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Timer
       objectReference: {fileID: 0}
+    - target: {fileID: 918642555948114623, guid: 9b0ebed056f1702408352a31ca8dbd7d, type: 3}
+      propertyPath: length
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1976450969174848635, guid: 9b0ebed056f1702408352a31ca8dbd7d, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -1154,7 +1158,7 @@ MonoBehaviour:
   - {fileID: 107235441432936306, guid: 3fe5d684f2f397d48b180bdd0e98e41d, type: 3}
   - {fileID: 8684327207162818127, guid: 24e63855c6f5d7249a989a044ada209e, type: 3}
   genOnStart: 1
-  numObjects: 25
+  numObjects: 75
   xUpperBound: 17
   yUpperBound: 9
   zUpperBound: 10

@@ -865,7 +865,7 @@ MonoBehaviour:
   inZone: 0
   time: 0
   achieved: 0
-  timeInZone: 5
+  timeInZone: 4
   g: {fileID: 0}
   targetVelocity: 1
   xVelocity: 0
@@ -1887,7 +1887,7 @@ MonoBehaviour:
   inZone: 0
   time: 0
   achieved: 0
-  timeInZone: 4
+  timeInZone: 3
   g: {fileID: 0}
   targetVelocity: 1
   xVelocity: 0
@@ -2087,7 +2087,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 918642555948114623, guid: 9b0ebed056f1702408352a31ca8dbd7d, type: 3}
       propertyPath: length
-      value: 75
+      value: 55
       objectReference: {fileID: 0}
     - target: {fileID: 1976450969174848635, guid: 9b0ebed056f1702408352a31ca8dbd7d, type: 3}
       propertyPath: m_RootOrder
@@ -2251,7 +2251,7 @@ MonoBehaviour:
   inZone: 0
   time: 0
   achieved: 0
-  timeInZone: 5
+  timeInZone: 4
   g: {fileID: 0}
   targetVelocity: 1
   xVelocity: 0
@@ -3644,7 +3644,7 @@ MonoBehaviour:
   inZone: 0
   time: 0
   achieved: 0
-  timeInZone: 5
+  timeInZone: 4
   g: {fileID: 0}
   targetVelocity: 1
   xVelocity: 0
@@ -4626,7 +4626,7 @@ MonoBehaviour:
   inZone: 0
   time: 0
   achieved: 0
-  timeInZone: 10
+  timeInZone: 8
   g: {fileID: 0}
   targetVelocity: 1
   xVelocity: 0
