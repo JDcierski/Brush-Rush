@@ -5,6 +5,7 @@ using UnityEngine;
 public class ToothBrushInjury : MonoBehaviour
 {
     public GameObject injury;
+    public GameObject injury2;
     
     public string zoneTag;
     public bool inZone;
@@ -16,6 +17,9 @@ public class ToothBrushInjury : MonoBehaviour
     public float targetVelocity;
     public float xVelocity;
     public float yVelocity;
+    public bool foam;
+    private float lastY;
+    public bool infront;
 
     // Start is called before the first frame update
     void Start()
@@ -35,10 +39,26 @@ public class ToothBrushInjury : MonoBehaviour
 
         if(inZone && (velocity.x >= targetVelocity || velocity.y >= targetVelocity)){
             time += Time.time - lastTime;
+        }else{
+            if(foam){
+                time = 0;
+            }
         }
         lastTime = Time.time;
         if(time >= timeInZone){
-            Instantiate(injury, transform.position, transform.rotation);
+            if(Random.Range(0, 2) == 1){
+                if(infront){
+                    Instantiate(injury2, transform.position + new Vector3(0f, 0f, -1f), Quaternion.Euler(90f, 0f, 0f));
+                }else{
+                    Instantiate(injury2, transform.position + new Vector3(0f, 0f, 1f), transform.rotation);
+                }
+            }else{
+                if(infront){
+                    Instantiate(injury, transform.position + new Vector3(0f, 0f, -1f), Quaternion.Euler(90f, 0f, 0f));
+                }else{
+                    Instantiate(injury, transform.position + new Vector3(0f, 0f, 1f), transform.rotation);
+                }
+            }
             time = 0;
         }
 
@@ -51,6 +71,7 @@ public class ToothBrushInjury : MonoBehaviour
     void OnTriggerExit2D(Collider2D col){
         if(col.gameObject.tag == zoneTag){
             inZone = false;
+            time = 0;
         }
     }
 }

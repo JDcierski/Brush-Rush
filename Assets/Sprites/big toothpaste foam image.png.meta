@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 49e18584bdd413a488851b60caa9b596
+guid: 194fed3a9cb576245a2cd213290469bc
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 200
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -105,22 +105,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: rubber duckie image_1
+      name: big toothpaste foam image_0
       rect:
         serializedVersion: 2
-        x: 552
-        y: 335
-        width: 573
-        height: 549
+        x: 384
+        y: 478
+        width: 349
+        height: 205
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9477b60233d1164d940a5b7b374078b
-      internalID: -1138660533
+      spriteID: 6837330118807dc43a2df44858d3cc78
+      internalID: 1888122405
       vertices: []
       indices: 
       edges: []
@@ -136,8 +136,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      rubber duckie image_0: -32150544
-      rubber duckie image_1: -1138660533
+      big toothpaste foam image_0: 1888122405
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
