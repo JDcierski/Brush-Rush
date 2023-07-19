@@ -2292,7 +2292,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   injury: {fileID: 1096077719742562979, guid: 3b7cab7a337f3d34793f1eef18021a5b, type: 3}
-  injury2: {fileID: 1096077719742562979, guid: 3b7cab7a337f3d34793f1eef18021a5b, type: 3}
+  injury2: {fileID: 1096077719742562979, guid: c0b22a4d2185a5147bc064d0f74ce6a9, type: 3}
   zoneTag: teeth
   inZone: 0
   time: 0

@@ -2,7 +2,10 @@ using UnityEngine;
 
 public class CameraAspectRatioManager : MonoBehaviour
 {
-    [SerializeField] private int widthAspect = 16;
+    void Start(){
+        Screen.SetResolution(1280, 720, false);
+    }
+    /*[SerializeField] private int widthAspect = 16;
     [SerializeField] private int heightAspect = 9;
     [Tooltip("After every how many frames to rescale the windows size.")]
     [SerializeField] private int updateAspectDelay = 100;
@@ -36,5 +39,6 @@ public class CameraAspectRatioManager : MonoBehaviour
 
         lastWidth = width;
         lastHeight = height;
-    }
+        
+    }*/
 }
