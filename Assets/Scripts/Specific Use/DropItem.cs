@@ -31,5 +31,8 @@ public class DropItem : MonoBehaviour
         if(!dropped){
             transform.position = new Vector3(Mathf.Sin(Time.time * frequency) * amp, 0f, 0f) + offset;
         }
+        if(transform.position.y <= -20){
+            GameObject.FindWithTag("GameManager").GetComponent<GameManager>().loseHp();
+        }
     }
 }

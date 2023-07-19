@@ -41,4 +41,46 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EasyMinigames/Wash Brush.unity
     guid: b0838d0568603d6438c52d12644485a7
+  - enabled: 1
+    path: Assets/Scenes/HardMinigames/Add Paste Hard.unity
+    guid: 2d8836ba8bedabc48a210658e9637e78
+  - enabled: 1
+    path: Assets/Scenes/HardMinigames/Add Water Hard.unity
+    guid: e085bb591df869044bfbccdad1a5b50f
+  - enabled: 1
+    path: Assets/Scenes/HardMinigames/Brush Teeth Hard.unity
+    guid: e649473589cd193448e1802da49fb0b3
+  - enabled: 1
+    path: Assets/Scenes/HardMinigames/Pick Brush Hard.unity
+    guid: 5840f6388b2d8b149a0d909945f1db27
+  - enabled: 1
+    path: Assets/Scenes/HardMinigames/Put Away Brush Hard.unity
+    guid: 460ba1ea74741634b8e129a8374c3d95
+  - enabled: 1
+    path: Assets/Scenes/HardMinigames/Spit Paste Hard.unity
+    guid: 883433b71f5642c4e9adae77d192ff0f
+  - enabled: 1
+    path: Assets/Scenes/HardMinigames/Wash Brush Hard.unity
+    guid: 17a28957dee48e646af5ef20d9af1747
+  - enabled: 1
+    path: Assets/Scenes/MediumMinigames/Add Paste Med.unity
+    guid: 3371c389cc5975e49a44662346523cf6
+  - enabled: 1
+    path: Assets/Scenes/MediumMinigames/Add Water Med.unity
+    guid: 925cdfe2faa13c849a06367907548791
+  - enabled: 1
+    path: Assets/Scenes/MediumMinigames/Brush Teeth Med.unity
+    guid: c877cc98ec686ee41bb29d3fc9e021ae
+  - enabled: 1
+    path: Assets/Scenes/MediumMinigames/Pick Brush Med.unity
+    guid: f337bfdeca45fe44897888172cd32bb2
+  - enabled: 1
+    path: Assets/Scenes/MediumMinigames/Put Away Brush Med.unity
+    guid: 72492d30009796f4fad61a9af6a6d3db
+  - enabled: 1
+    path: Assets/Scenes/MediumMinigames/Spit Paste Med.unity
+    guid: 69a1eabd0b8be8542b5ed3842753ef0f
+  - enabled: 1
+    path: Assets/Scenes/MediumMinigames/Wash Brush Med.unity
+    guid: 5dc2f360835b02446a9b5a82a29aee8b
   m_configObjects: {}
