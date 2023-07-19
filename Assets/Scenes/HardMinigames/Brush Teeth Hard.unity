@@ -2273,7 +2273,7 @@ MonoBehaviour:
   zoneTag: Injury
   inZone: 0
   time: 0
-  timeInZone: 1
+  timeInZone: 0.5
   targetVelocity: 2
   xVelocity: 0
   yVelocity: 0
